@@ -38,10 +38,37 @@ header {
 
 .menu a {
     text-decoration: none;
-    color: #3e2b20;
-    font-size: 15px;
+    color: #76523c;
+    font-size: 14px;
+    position: relative;
 }
 
-.menu a:hover {
-    color: #8a5a3b;
+.menu a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #76523c;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    color: #84431a;
+}
+
+.subtitulo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    color: #4A403A;
+    text-align: center;
 }
