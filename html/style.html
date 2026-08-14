@@ -5,24 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Café</title>
-    <title>Cafeteria Aroma Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <h1>Aroma Café</h1>
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <div class="brand">
+                <h1>Aroma Café</h1>
+            </div>
 
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="#">Home</a>
+                <a class="active" href="#">Menu</a>
+            </nav>
 
-        </nav>
+            <button class="theme-btn" aria-label="Configurações">
+                <span aria-hidden="true">⚙</span>
+            </button>
+        </div>
     </header>
+
+    <main class="menu-page">
+        <section class="menu-header">
+            <h2>Our Menu</h2>
+            <p>Explore nossas melhores ofertas</p>
+        </section>
+
+        <div class="menu-categories" aria-label="Categorias do menu">
+            <span class="category active">Cafés</span>
+        </div>
+
+        <section class="menu-grid" aria-label="Itens do menu">
+            <article class="menu-item">
+                <img class="item-image" src="../imagens/caf%C3%A9.jpg" alt="Classic Espresso" />
+                <div class="item-content">
+                    <h3>Café coado</h3>
+                    <p>Café coado simples.</p>
+                    <span class="price">$7.50</span>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img class="item-image" src="../imagens/caf%C3%A9%20expresso.jpg" alt="Café Expresso" />
+                <div class="item-content">
+                    <h3>Café Expresso</h3>
+                    <p>Expresso tradicional.</p>
+                    <span class="price">$8.50</span>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img class="item-image" src="../imagens/capuccino.jpg" alt="Capuccino" />
+                <div class="item-content">
+                    <h3>Capuccino</h3>
+                    <p>Capuccino com leite vaporizado e espuma cremosa.</p>
+                    <span class="price">$9.50</span>
+                </div>
+            </article>
+        </section>
+
+        <div class="menu-categories" aria-label="Categorias do menu">
+            <span class="category active">Lanches</span>
+        </div>
+
+        <section class="menu-grid" aria-label="Itens do menu">
+            <article class="menu-item">
+                <img class="item-image" src="../imagens/bauru.jpg" alt="Bauru" />
+                <div class="item-content">
+                    <h3>Bauru</h3>
+                    <p>Salgado de queijo, presunto e tomate.</p>
+                    <span class="price">$8.00</span>
+                </div>
+            </article>
+
+
+            <article class="menu-item">
+                <img class="item-image" src="../imagens/misto.jpg" alt="Misto Quente" />
+                <div class="item-content">
+                    <h3>Misto Quente</h3>
+                    <p>Sanduíche de presunto e queijo grelhado.</p>
+                    <span class="price">$10.50</span>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img class="item-image" src="../imagens/brusqueta de bacon.jpg" alt="Capuccino" />
+                <div class="item-content">
+                    <h3>Brusquetas de Bacon</h3>
+                    <p>Duas brusquetas com queijo, tomate, rúcula e bacon crocantes.</p>
+                    <span class="price">$18.50</span>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 
 </html>
