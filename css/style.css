@@ -213,6 +213,9 @@ a {
 }
 
 .menu-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 18px;
     overflow: hidden;
@@ -228,8 +231,10 @@ a {
     object-position: center;
 }
 
-
 .item-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     background: rgba(249, 245, 241, 0.8);
     padding: 24px 22px 20px;
 }
@@ -244,14 +249,17 @@ a {
 }
 
 .item-content p {
+    flex: 1;
     color: rgba(74, 55, 43, 0.82);
     font-size: 1.02rem;
     line-height: 1.6;
     min-height: 72px;
+    margin: 0;
 }
 
 .price {
     display: inline-block;
+    align-self: flex-start;
     margin-top: 18px;
     padding: 12px 28px;
     border-radius: 999px;
